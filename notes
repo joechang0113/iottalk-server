@@ -1,0 +1,11 @@
+1. dan.js
+(1) var _suspended = true;
+(2) function push (idf_name, data, callback) {
+    if (idf_name == 'Control') {
+        idf_name = '__Ctl_I__';
+    }
+    _df_is_odf[idf_name] = false;
+    csmapi.push(_mac_addr, idf_name, data, callback);
+    }
+2. dai-app.js
+(1) dan.push('ImageInput', [ImageInputString], callback); //df_name, data, callback_function 
